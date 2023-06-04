@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MoviesService } from '../services/movies.service';
 import {Pelicula} from '../interfaces/interfaces'
 import { register } from 'swiper/element/bundle';
+import { environment } from 'src/environments/environment';
 register();
 @Component({
   selector: 'app-tab1',
@@ -11,7 +12,7 @@ register();
 })
 export class Tab1Page implements OnInit{
 
-  URL:String= "https://image.tmdb.org/t/p/w500";
+  URL:string=environment.imgPath;
   peliculasRecientes:Pelicula[]=[];
   constructor(private moviesService:MoviesService) {}
 
