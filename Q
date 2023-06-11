@@ -1,0 +1,23 @@
+[33mcommit e6cd69cbf6aa29cba2144dc613ed6fb870ac7769[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Chico Cristiano <felixbat87@gmail.com>
+Date:   Sun May 28 18:23:22 2023 -0500
+
+    Actualizacion de slide a SWIPEER
+
+[33mcommit 5b58dd3296c81ff7fc0e2f91e081f33c61402dbb[m
+Author: Chico Cristiano <felixbat87@gmail.com>
+Date:   Sun May 28 18:23:03 2023 -0500
+
+    Actualizacion de slide a SWIPEER
+
+[33mcommit 56dbbecd7a7eafe48485bf28a428b5ab9bedc3ea[m
+Author: Chico Cristiano <felixbat87@gmail.com>
+Date:   Sun May 21 10:27:30 2023 -0500
+
+    Integracion del Servicio en Tab1
+
+[33mcommit e54e9280ca49c6cb91f52b0e284024be40e5a45c[m
+Author: Chico Cristiano <felixbat87@gmail.com>
+Date:   Sat May 20 19:07:31 2023 -0500
+
+    Initial commit

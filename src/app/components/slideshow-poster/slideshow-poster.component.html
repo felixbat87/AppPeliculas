@@ -1,0 +1,15 @@
+<swiper-container slides-per-view="1.3"
+free-mode="true">
+  <swiper-slide *ngFor="let pelicula of peliculas;" class="poster" >
+  
+   
+        <ion-card >
+          <img class="poster" src="{{URL}}{{pelicula.poster_path}}">
+          
+        </ion-card>
+
+   
+   
+  </swiper-slide>
+  
+</swiper-container>

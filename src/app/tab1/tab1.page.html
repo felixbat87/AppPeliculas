@@ -1,18 +1,29 @@
-<ion-content [fullscreen]="true">
+<ion-content >
  
+  <ion-grid fixed>
+  <ion-row>
+    <ion-col>
+      <h3>Peliculas Nuevas</h3></ion-col>
+  </ion-row>
+  </ion-grid>
 
-  <swiper-container slides-per-view="1.3"
+<app-slideshow-backdrop [peliculas]="peliculasRecientes"></app-slideshow-backdrop>
+  <!-- <swiper-container slides-per-view="1.3"
   free-mode="true">
     <swiper-slide *ngFor="let pelicula of peliculasRecientes;">
-    
       <ion-card>
-        <img src="{{URL}}{{pelicula.backdrop_path}}">
-        
+        <img src="{{URL}}{{pelicula.backdrop_path}}"> 
       </ion-card>
-     
     </swiper-slide>
-    
-  </swiper-container>
+  </swiper-container> -->
 
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col>
+        <h3>Cartelera</h3></ion-col>
+    </ion-row>
+    </ion-grid>
+  
+    <app-slideshow-poster [peliculas]="peliculasRecientes"></app-slideshow-poster>
 
 </ion-content>
