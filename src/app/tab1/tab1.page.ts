@@ -14,6 +14,7 @@ export class Tab1Page implements OnInit{
 
   URL:string=environment.imgPath;
   peliculasRecientes:Pelicula[]=[];
+  populares:Pelicula[]=[];
   constructor(private moviesService:MoviesService) {}
 
 
@@ -22,8 +23,14 @@ export class Tab1Page implements OnInit{
 
     this.moviesService.getFeature().subscribe
     (resp=>{
-      console.log('Resp',resp);
       this.peliculasRecientes=resp.results;
+    });
+
+
+    this.moviesService.getPopulares().subscribe((resp)=>{
+      console.log('populares',resp);
+      this.populares=resp.results;
+
     });
       
   }

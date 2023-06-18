@@ -3,8 +3,11 @@ import { Injectable } from '@angular/core';
 import { RespuestaMDB } from '../interfaces/interfaces';
 import { environment } from 'src/environments/environment';
 
+
 const URL= environment.url;
 const apiKey=environment.apikey;
+const complement=environment.complement;
+const populares= environment.populares;
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +16,7 @@ const apiKey=environment.apikey;
 
 
 export class MoviesService {
-
+ query:string='';
   constructor(private http:HttpClient) { }
  
   private ejecutarQuery<T>(query:string ){
@@ -21,6 +24,13 @@ export class MoviesService {
    query=URL+query;
    query+=`?api_key=${apiKey}`;
    return this.http.get<T>(query);
+  }
+
+  getPopulares(){
+
+    const query=`${URL}${complement}?api_key=${apiKey}${populares}`;
+    return this.http.get<RespuestaMDB>(query);
+
   }
 
   getFeature(){
