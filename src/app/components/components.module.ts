@@ -4,15 +4,18 @@ import { SlideshowBackdropComponent } from './slideshow-backdrop/slideshow-backd
 import { IonicModule } from '@ionic/angular';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { SlideshowPosterComponent } from './slideshow-poster/slideshow-poster.component';
+import { SlideshowParesComponent } from './slideshow-pares/slideshow-pares.component';
+import { PipesModule } from '../pipes/pipes.module';
 
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  declarations: [SlideshowBackdropComponent,SlideshowPosterComponent],
-  exports:[SlideshowBackdropComponent,SlideshowPosterComponent],
+  declarations: [SlideshowBackdropComponent,SlideshowPosterComponent,SlideshowParesComponent],
+  exports:[SlideshowBackdropComponent,SlideshowPosterComponent,SlideshowParesComponent],
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    PipesModule
   ]
 })
 export class ComponentsModule { }

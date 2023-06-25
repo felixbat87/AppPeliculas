@@ -1,0 +1,21 @@
+<swiper-container slides-per-view="1.3"
+free-mode="true" space-between="-10">
+  <swiper-slide *ngFor="let pares of peliculas | pares;" class="poster2">
+
+    <ion-row  >
+
+      <ion-col size="12" *ngFor="let pelicula of pares">
+        <ion-card >
+          <img src="{{URL}}{{pelicula.poster_path}}" class="cover">
+          
+        </ion-card>
+      </ion-col>
+
+      
+
+    </ion-row>
+
+  </swiper-slide>
+  
+
+</swiper-container>
