@@ -5,4 +5,5 @@ export const environment = {
   imgPath:'https://image.tmdb.org/t/p/w500',
   complement:'/discover/movie',
   populares: '&sort_by=popularity.desc',
+  page:'&page='
 };

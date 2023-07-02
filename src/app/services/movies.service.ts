@@ -8,6 +8,7 @@ const URL= environment.url;
 const apiKey=environment.apikey;
 const complement=environment.complement;
 const populares= environment.populares;
+const page=environment.page;
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +17,7 @@ const populares= environment.populares;
 
 
 export class MoviesService {
+ private popularesPage =0;
  query:string='';
   constructor(private http:HttpClient) { }
  
@@ -28,7 +30,9 @@ export class MoviesService {
 
   getPopulares(){
 
-    const query=`${URL}${complement}?api_key=${apiKey}${populares}`;
+
+    this.popularesPage++;
+    const query=`${URL}${complement}?api_key=${apiKey}${populares}${page}${this.popularesPage}`;
     return this.http.get<RespuestaMDB>(query);
 
   }
