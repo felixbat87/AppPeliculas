@@ -2,7 +2,7 @@
 free-mode="true">
   <swiper-slide *ngFor="let pelicula of peliculas;" class="backdrop">
   
-        <ion-card >
+        <ion-card (click)="verDetalle(pelicula.id)">
           <img src="{{URL}}{{pelicula.backdrop_path}}">
           
         </ion-card>
