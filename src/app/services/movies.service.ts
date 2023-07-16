@@ -54,8 +54,7 @@ export class MoviesService {
   }
 
 
-  getActoresPelicula(id:any){
-
+  getActoresPelicula(id:string){
 
     const query=`${URL}/movie/${id}/credits?api_key=${apiKey}`;
     return this.http.get<RespuestaCredits>(query);
