@@ -62,4 +62,11 @@ export class MoviesService {
 
   }
 
+  buscarPeliculas(texto:string){
+ 
+    const query=`${URL}/search/movie?query=${texto}&api_key=${apiKey}`;
+
+    return this.http.get<RespuestaMDB>(query)
+  }
+
 }
