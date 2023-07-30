@@ -20,6 +20,7 @@ export interface RespuestaMDB {
     adult: boolean;
     overview: string;
     release_date: string;
+  
   }
   
   export interface PeliculaDetalle {

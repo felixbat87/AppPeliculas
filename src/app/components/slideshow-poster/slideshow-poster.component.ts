@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { Pelicula } from 'src/app/interfaces/interfaces';
+import { Pelicula, PeliculaDetalle } from 'src/app/interfaces/interfaces';
 import { environment } from 'src/environments/environment';
 import { register } from 'swiper/element/bundle';
 import { DetalleComponent } from '../detalle/detalle.component';
@@ -13,7 +13,7 @@ register();
 export class SlideshowPosterComponent  implements OnInit {
   URL:string=environment.imgPath;
 
-  @Input() peliculas: Pelicula[]=[];
+  @Input() peliculas: PeliculaDetalle[]=[];
   constructor(private modalCtrl:ModalController) { }
 
   ngOnInit() {}
