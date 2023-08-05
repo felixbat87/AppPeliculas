@@ -27,28 +27,49 @@
 
 .poster{
     width: 129px !important;
-    height: 170px !important;
+    height: 200px !important;
+    border-radius: 16px;
    
 }
 
 .backdrop{
  width: 500px !important;
  padding: 5px !important;
+ margin-bottom: 0px;
 }
 
 .poster2{
-    width: 110px !important;
-    height: 310px !important;
+    width: 129px !important;
+    height: 370px !important;
+ 
    
 }
 
 .img-actor{
 
-    height: 160px;
+    height: 130px;
     width: 140px;
 
 
+
 }
+
+.backdro-img{
+
+    border-radius: 20px !important;
+   
+
+}
+
+ion-card{
+    box-shadow: none !important;
+}
+
+
+
+
+
+
 
 
   

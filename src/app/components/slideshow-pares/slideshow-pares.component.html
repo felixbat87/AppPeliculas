@@ -6,7 +6,7 @@ free-mode="true" space-between="-10">
 
       <ion-col size="12" *ngFor="let pelicula of pares">
         <ion-card mode="md" (click)="verDetalle(pelicula.id)" >
-          <img src="{{URL}}{{pelicula.poster_path}}" class="cover">
+          <img class="backdro-img" src="{{URL}}{{pelicula.poster_path}}" class="cover">
           
         </ion-card>
       </ion-col>
